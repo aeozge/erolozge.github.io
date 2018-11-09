@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimal</title>
+    <title>Ozge</title>
     <link>http://example.com/</link>
-    <description>Recent content on Minimal</description>
+    <description>Recent content on Ozge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Homebrew</title>
+      <link>http://example.com/post/homebrew/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/homebrew/</guid>
+      <description>On this blog, I will give brief information about Homebrew and list some basic commands of Homebrew. What is Homebrew? Homebrew is a software package management system that simplifies the installation of software on Mac OS. What does a package manager do? Packages are installable bundles of source code. A package manager is a tool which automates the process of installing, updating, and removing packages. More Information about Homebrew ; Homebrew is written in the Ruby programming language and targets the version of Ruby that comes installed with the macOS operating system.</description>
+    </item>
     
     <item>
       <title>My First Post</title>
