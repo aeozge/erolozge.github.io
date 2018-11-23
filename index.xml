@@ -6,10 +6,25 @@
     <description>Recent content on Ozge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Build Yolov3</title>
+      <link>http://example.com/post/installyolo/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/installyolo/</guid>
+      <description>How To Build Yolov3 On MacOs
+What is Yolo?
+You only look once (YOLO) is a real-time object detection system. It is the fastest model for object detection.
+This post will guide you how to build Yolo on macOS:
+First of all, I suggest you to open your terminal and command this:
+source ~/.bashrc (bashrc : features of bash profile)
+If you don&amp;rsquo;t already have Darknet installed, you should install that first, or instead of reading all that just run:</description>
+    </item>
     
     <item>
       <title>Homebrew</title>

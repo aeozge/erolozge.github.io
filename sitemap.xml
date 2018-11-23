@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.com/post/installyolo/</loc>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.com/post/homebrew/</loc>
     <lastmod>2018-11-08T00:00:00+00:00</lastmod>
   </url>
@@ -19,13 +24,13 @@
   
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2018-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://example.com/post/</loc>
-    <lastmod>2018-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
