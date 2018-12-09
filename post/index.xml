@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>Convert A RGB Image To Grayscale Image</title>
+      <title>Convert to an RGB Image to a Grayscale Image</title>
       <link>http://example.com/post/convertrgbtograyscale/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>http://example.com/post/convertrgbtograyscale/</guid>
-      <description>How To Convert RGB Image To Grayscale Image In this article, I will explain how to convert an RGB image to Gray Scale image. I&amp;rsquo;ll do it in Python 3 with using Sublime Text Version 3.1.1 as a text editor.
-We need to installed some required packages. Before installing these packages, you may need modify &amp;ldquo;.bash_profile&amp;rdquo; on your Terminal and dealing with compiler problems. So, make sure that you&amp;rsquo;ve already have those packages.</description>
+      <description>How to Convert an RGB Image to a Grayscale Image In this article, I will explain how to convert an RGB image to Gray Scale image. I will do it using Python 3 with Sublime Text Version 3.1.1 as a text editor.
+We need to install some required packages. Before installing these packages, you may need modify &amp;ldquo;.bash_profile&amp;rdquo; on your Terminal and deal with compiler problems. So, make sure that you already have those packages.</description>
     </item>
     
     <item>
