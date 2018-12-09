@@ -59,7 +59,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.51" />
+ <meta name="generator" content="Hugo 0.52" />
         
 
         
@@ -145,21 +145,26 @@
 </div>
 
 
-    <br> <div class="text-justify"><p>How To Build Yolov3 On MacOs</p>
+    <br> <div class="text-justify"><p>How To Build Yolov3-Tiny On MacOs</p>
 
 <p>What is Yolo?</p>
 
 <p>You only look once (YOLO) is a real-time object detection system.
 It is the fastest model for object detection.</p>
 
-<p>This post  will guide you how to build Yolo on macOS:</p>
+<p>Comparison to Other Detectors:</p>
+
+<p>YOLOv3 is extremely fast and accurate.
+You can easily tradeoff between speed and accuracy simply by changing the size of the model, no retraining required!</p>
+
+<p>In this post,I will guide you how to build Yolov3-tiny on macOS terminal :</p>
 
 <p>First of all, I suggest you to open your terminal and command this:</p>
 
 <p>source ~/.bashrc
- (bashrc : features of bash profile)</p>
+ (bashrc : features of bash profile and its because blocking possibility of getting errors)</p>
 
-<p>If you don&rsquo;t already have Darknet installed, you should install that first, or instead of reading all that just run:</p>
+<p>If you don&rsquo;t already have Darknet installed, you should install that first. You can just run that instead of reading all :</p>
 
 <p>=&gt; git clone <a href="https://github.com/pjreddie/darknet">https://github.com/pjreddie/darknet</a></p>
 
@@ -200,6 +205,8 @@ It is the fastest model for object detection.</p>
   seen 64
   Done!
 </code></pre>
+
+<p>As you see, it was pretty simple to build Yolov3 on your Mac operating system. Now, you can use it easily. :)</p>
 
 <p>References:
 <a href="https://pjreddie.com/darknet/yolo">https://pjreddie.com/darknet/yolo</a></p>

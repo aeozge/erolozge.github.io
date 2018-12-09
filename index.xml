@@ -6,10 +6,20 @@
     <description>Recent content on Ozge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Convert A RGB Image To Grayscale Image</title>
+      <link>http://example.com/post/convertrgbtograyscale/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/convertrgbtograyscale/</guid>
+      <description>How To Convert RGB Image To Grayscale Image In this article, I will explain how to convert an RGB image to Gray Scale image. I&amp;rsquo;ll do it in Python 3 with using Sublime Text Version 3.1.1 as a text editor.
+We need to installed some required packages. Before installing these packages, you may need modify &amp;ldquo;.bash_profile&amp;rdquo; on your Terminal and dealing with compiler problems. So, make sure that you&amp;rsquo;ve already have those packages.</description>
+    </item>
     
     <item>
       <title>Build Yolov3</title>
@@ -17,13 +27,12 @@
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>http://example.com/post/installyolo/</guid>
-      <description>How To Build Yolov3 On MacOs
+      <description>How To Build Yolov3-Tiny On MacOs
 What is Yolo?
 You only look once (YOLO) is a real-time object detection system. It is the fastest model for object detection.
-This post will guide you how to build Yolo on macOS:
-First of all, I suggest you to open your terminal and command this:
-source ~/.bashrc (bashrc : features of bash profile)
-If you don&amp;rsquo;t already have Darknet installed, you should install that first, or instead of reading all that just run:</description>
+Comparison to Other Detectors:
+YOLOv3 is extremely fast and accurate. You can easily tradeoff between speed and accuracy simply by changing the size of the model, no retraining required!
+In this post,I will guide you how to build Yolov3-tiny on macOS terminal :</description>
     </item>
     
     <item>

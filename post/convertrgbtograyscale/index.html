@@ -4,7 +4,7 @@
          
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Homebrew</title>
+        <title>Convert A RGB Image To Grayscale Image</title>
         
         <style>
 
@@ -80,7 +80,7 @@
 
                 <div class="navbar-header">
 
-                    <a class="navbar-brand visible-xs" href="#">Homebrew</a>
+                    <a class="navbar-brand visible-xs" href="#">Convert A RGB Image To Grayscale Image</a>
 
                     <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
@@ -138,64 +138,114 @@
     
     
 
-    <h4><a href="/post/homebrew/">Homebrew</a></h4>
-    <h5>November 8, 2018</h5>
+    <h4><a href="/post/convertrgbtograyscale/">Convert A RGB Image To Grayscale Image</a></h4>
+    <h5>December 8, 2018</h5>
     
 
 </div>
 
 
-    <br> <div class="text-justify"><p>On this blog, I will give brief information about Homebrew and list
-some basic commands of Homebrew.
-What is Homebrew?
-Homebrew is a software package management system that simplifies the
-installation of software on Mac OS.
-What does a package manager do?
-Packages are installable bundles of source code. A package manager is a
-tool which automates the process of installing, updating, and removing
-packages.
-More Information about Homebrew ;
-Homebrew is written in the Ruby programming language and targets the
-version of Ruby that comes installed with the macOS operating system.
-Homebrew installs the stuff you need that Apple didn’t.
-Homebrew is fast, free and open-source.
-Doesn’t use ‘sudo’ to install packages.
-Why would you need a package manager?
-If you usually use open source software that needs compiling, updating
-or configuring etc. manually, you would need a package manager and
-Homebrew is one such package manager.
-How to Install and Use Homebrew
-Installation Homebrew :
-/usr/bin/ruby -e &ldquo;$(curl -fsSL <a href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a>
-Homebrew/install/master/install)”</p>
+    <br> <div class="text-justify">
 
-<p>Paste the above command at a Terminal prompt.</p>
+<h1 id="how-to-convert-rgb-image-to-grayscale-image">How To Convert RGB Image To Grayscale Image</h1>
 
-<p>Homebrew Cheatsheet
-$ brew install packagename : Install a package
-$ brew uninstall packagename : Uninstall a package
-$ brew search : This will show everything that Homebrew has.
-$ brew search packagename : Search a package
-$ brew list : List installed
-$ brew list - -version packagename : See what versions you have
-$ brew info packagename : List versions and information about a
-package
-$ brew update : Update all packages you installed.
-$ brew upgrade : Upgrade all packages you installed.
-$ brew - -version : See what version of Homebrew you have
-$ brew leaves: show installed formulae that are not dependencies of
-another installed formula.
-$ brew cleanup packagename : Remove old versions
-Troubleshooting:
-$ brew config
-$ brew doctor : fix all the warnings.
-If you have any trouble, run “brew update” twice and “brew
-doctor” before creating an issue!</p>
+<p>In this article, I will explain how to convert an RGB image to Gray Scale image.
+I&rsquo;ll do it in Python 3 with using Sublime Text Version 3.1.1 as a text editor.</p>
 
-<p>References :
-Official Website of Homebrew <a href="https://brew.sh/">https://brew.sh/</a>
-Wikipedia <a href="https://en.wikipedia.org/wiki/">https://en.wikipedia.org/wiki/</a>
-Homebrew_(package_management_software)</p>
+<p>We need to installed some required packages. Before installing these packages, you may need modify &ldquo;.bash_profile&rdquo; on your Terminal and dealing with compiler problems. So, make sure that you&rsquo;ve already have those packages.</p>
+
+<p>#Import required libraries</p>
+
+<p>import argparse
+import numpy as np
+import cv2</p>
+
+<h1 id="let-s-explain-these-libraries">Let&rsquo;s explain these libraries :</h1>
+
+<p>Argparse is a parser module for command-line options, arguments and subcommands. The argparse module makes it easy to write command-line interfaces. It also generates help and usage messages and issues errors when users give the program invalid arguments.</p>
+
+<h1 id="installation-on-terminal">Installation on Terminal:</h1>
+
+<p>pip3 install argparse</p>
+
+<p>Code :</p>
+
+<p>#construct the argument parser and parse the argument</p>
+
+<p>ap = argparse.ArgumentParser()
+ap.add_argument(&ldquo;-i&rdquo;, &ldquo;&ndash;image&rdquo;, required = True, help = &ldquo;It&rsquo;s path to the image&rdquo;)
+args= vars(ap.parse_args())</p>
+
+<p>You can give any name for your argument instead of &ldquo;-i&rdquo; or &ldquo;&ndash;image&rdquo;.</p>
+
+<p>NumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.</p>
+
+<h1 id="installation-on-terminal-1">Installation on Terminal:</h1>
+
+<p>pip3 install numpy</p>
+
+<p>OpenCv is free computer vision library for both academic and commercial use. OpenCv was designed for computational efficiency and with a strong focus on real-time applications</p>
+
+<h1 id="installation-on-terminal-2">Installation on Terminal:</h1>
+
+<p>pip3 install opencv-python</p>
+
+<p>OR</p>
+
+<p>conda install opencv</p>
+
+<p>#read the image</p>
+
+<p>image = cv2.imread(args[&ldquo;image&rdquo;])</p>
+
+<p>#If you&rsquo;d like to resize your image
+#resize the image</p>
+
+<p>r = 1000.0/image.shape[1]
+dim = (1000, int(image.shape[0] * r))</p>
+
+<p>resized = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)</p>
+
+<p>#show the original image</p>
+
+<p>cv2.imshow(&ldquo;Original Image&rdquo;, resized)</p>
+
+<p>#convert RGB image to GrayScale image
+#the formula for gray scale is C = 0.2126 R + 0.7152 G + 0.0722 B
+#uint8 : it&rsquo;s a data type of numpy arrays, images use the dtype range(0 to 255)</p>
+
+<p>def gray_convert(resized):
+    grayValue = 0.0722 * resized[:,:,2] + 0.7152 * resized[:,:,1] + 0.2126 * resized[:,:,0]
+    gray_img = grayValue.astype(np.uint8)
+    return gray_img</p>
+
+<p>gray = gray_convert(resized)</p>
+
+<p>#show the converted image</p>
+
+<p>cv2.imshow(&ldquo;GrayScale image&rdquo;, gray)</p>
+
+<p>#save the gray scale image as a new image</p>
+
+<p>cv2.imwrite(&ldquo;new_image.jpg&rdquo;, gray)</p>
+
+<p>#waitKey pauses the execution of the script until we press a key on our keyboard.
+#Using a parameter of &ldquo;0&rdquo; indicates that any key press will unpause the execution.</p>
+
+<p>cv2.waitKey(0)
+cv2.destroyAllWindows()</p>
+
+<h1 id="references">References :</h1>
+
+<p><a href="https://docs.python.org/3/library/argparse.html">https://docs.python.org/3/library/argparse.html</a></p>
+
+<p><a href="https://opencv.org">https://opencv.org</a></p>
+
+<p><a href="https://docs.scipy.org/doc/numpy/user/whatisnumpy.html">https://docs.scipy.org/doc/numpy/user/whatisnumpy.html</a></p>
+
+<p><a href="https://www.pyimagesearch.com">https://www.pyimagesearch.com</a></p>
+
+<p><a href="https://stackoverflow.com/questions/17615963/standard-rgb-to-grayscale-conversion">https://stackoverflow.com/questions/17615963/standard-rgb-to-grayscale-conversion</a></p>
 </div>
 
     
