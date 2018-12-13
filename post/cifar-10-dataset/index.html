@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>How To Get Cifar-10 Dataset</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: purple;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="http://example.com/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.52" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">How To Get Cifar-10 Dataset</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:me@example.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/erolozge/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/eozge01/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/erolozge/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.stackoverflow.com/username/"><i class="fa fa-stack-overflow"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/cifar-10-dataset/">How To Get Cifar-10 Dataset</a></h4>
+    <h5>December 13, 2018</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>How to get cifar-10 dataset on Mac terminal</p>
+
+<p>In this post, I will explain how to get cifar-10 dataset using terminal on mac. The cifar-10 dataset consists 10 classes which are airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck. These classes have 6000 images per class. There are 50000 training images and 10000 test images in this dataset.</p>
+
+<p>Let&rsquo;s see how to get the cifar-10 dataset :</p>
+
+<p>First of all, I guess you have already installed darknet on your computer. If not, you can download it by clicking this link <a href="https://pjreddie.com/darknet/install/">https://pjreddie.com/darknet/install/</a></p>
+
+<p>Open your terminal</p>
+
+<p>With using vim ~/.bashrc activate darknet. I&rsquo;m pretty sure the downloading process will work better.</p>
+
+<p>Open directory which name is data.</p>
+
+<pre><code>cd darknet/data
+(data) =&gt; wget https://pjreddie.com/media/files/cifar.tgz
+</code></pre>
+
+<p>(You need to install &ldquo;wget&rdquo; if you can&rsquo;t run this command.
+Installation wget is &lsquo;brew install wget&rsquo;
+After installed, you can run the command.)</p>
+
+<pre><code>(data) =&gt; tar xzf cifar.tgz
+</code></pre>
+
+<p>After that list cifar directory :</p>
+
+<pre><code>(data) =&gt; ls cifar
+</code></pre>
+
+<p>this cifar directory should contain labels.txt - test - train files.</p>
+
+<p>If you want to see what kinds of classes you have,</p>
+
+<pre><code>(data) =&gt; cat cifar/label.txt
+</code></pre>
+
+<p>and you will see the 10 classes.</p>
+
+<p>We need to generate the paths files. These files will hold all the paths to the training and validation data.
+Let&rsquo;s do that:</p>
+
+<p>open directory of cifar</p>
+
+<pre><code>(data) =&gt; cd cifar
+</code></pre>
+
+<p>Write down these two commands:</p>
+
+<pre><code>(cifar) =&gt; find `pwd`/train-name\*.png &gt; train.list
+(cifar) =&gt; find `pwd`/test-name\*.png &gt; test.list
+</code></pre>
+
+<p>then</p>
+
+<pre><code>cd ../..
+</code></pre>
+
+<p>After generated paths files, we have to give Darknet some metadata about cifar-10 dataset. Using a text editor which I use Sublime Text, open a new file called &lsquo;cfg/cifar.data&rsquo; in the &lsquo;cfg/&rsquo; directory.
+In it, you should have something like;</p>
+
+<pre><code>classes=10
+train  = data/cifar/train.list
+valid  = data/cifar/test.list
+labels = data/cifar/labels.txt
+backup = backup/
+top=2
+</code></pre>
+
+<p>Also, we need to make another file called cfg/cifar_small.cfg in the &lsquo;cfg&rsquo; directory for making a network to train dataset.</p>
+
+<pre><code>[net]
+batch=128
+subdivisions=1
+height=28
+width=28
+channels=3
+max_crop=32
+min_crop=32
+
+hue=.1
+saturation=.75
+exposure=.75
+
+learning_rate=0.1
+policy=poly
+power=4
+max_batches = 5000
+momentum=0.9
+decay=0.0005
+
+[convolutional]
+batch_normalize=1
+filters=32
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[maxpool]
+size=2
+stride=2
+
+[convolutional]
+batch_normalize=1
+filters=16
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[maxpool]
+size=2
+stride=2
+
+[convolutional]
+batch_normalize=1
+filters=32
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=128
+size=3
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+batch_normalize=1
+filters=64
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[convolutional]
+filters=10
+size=1
+stride=1
+pad=1
+activation=leaky
+
+[avgpool]
+
+[softmax]
+</code></pre>
+
+<p>This one is small network and it is only see how to train a dataset.</p>
+
+<p>Let&rsquo;s train the cifar-10 dataset :</p>
+
+<pre><code>(darknet) =&gt; ./darknet classifier train cfg/cifar.data cfg/cifar_small.cfg
+</code></pre>
+
+<ul>
+<li>Make sure that you correctly wrote your paths files. I got some trouble about it. For example, I wrote</li>
+<li>* something different like cfg:cfg/cifar.data&hellip;
+***</li>
+</ul>
+
+<p>After this step, download an image which should depends on dataset as frog,fox or airplane.</p>
+
+<p>then run this code below:</p>
+
+<pre><code>    (darknet) =&gt; ./darknet classify cfg/cifar_small.cfg backup/cifar_small_5000.weights ~/location-of-your-image
+</code></pre>
+
+<p>References:</p>
+
+<p><a href="https://pjreddie.com/darknet/train-cifar/">https://pjreddie.com/darknet/train-cifar/</a></p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "username" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

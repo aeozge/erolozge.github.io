@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Ozge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How To Get Cifar-10 Dataset</title>
+      <link>http://example.com/post/cifar-10-dataset/</link>
+      <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.com/post/cifar-10-dataset/</guid>
+      <description>How to get cifar-10 dataset on Mac terminal
+In this post, I will explain how to get cifar-10 dataset using terminal on mac. The cifar-10 dataset consists 10 classes which are airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck. These classes have 6000 images per class. There are 50000 training images and 10000 test images in this dataset.
+Let&amp;rsquo;s see how to get the cifar-10 dataset :
+First of all, I guess you have already installed darknet on your computer.</description>
+    </item>
     
     <item>
       <title>Convert to an RGB Image to a Grayscale Image</title>
