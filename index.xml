@@ -2,43 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ozge</title>
-    <link>http://example.com/</link>
+    <link>https://erolozge.github.io/</link>
     <description>Recent content on Ozge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://erolozge.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>How To Get Cifar-10 Dataset</title>
-      <link>http://example.com/post/cifar-10-dataset/</link>
-      <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.com/post/cifar-10-dataset/</guid>
-      <description>How to get cifar-10 dataset on Mac terminal
-In this post, I will explain how to get cifar-10 dataset using terminal on mac. The cifar-10 dataset consists 10 classes which are airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck. These classes have 6000 images per class. There are 50000 training images and 10000 test images in this dataset.
-Let&amp;rsquo;s see how to get the cifar-10 dataset :
-First of all, I guess you have already installed darknet on your computer.</description>
-    </item>
     
     <item>
       <title>Convert to an RGB Image to a Grayscale Image</title>
-      <link>http://example.com/post/convertrgbtograyscale/</link>
+      <link>https://erolozge.github.io/post/convertrgbtograyscale/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/post/convertrgbtograyscale/</guid>
+      <guid>https://erolozge.github.io/post/convertrgbtograyscale/</guid>
       <description>How to Convert an RGB Image to a Grayscale Image In this article, I will explain how to convert an RGB image to Gray Scale image. I will do it using Python 3 with Sublime Text Version 3.1.1 as a text editor.
 We need to install some required packages. Before installing these packages, you may need modify &amp;ldquo;.bash_profile&amp;rdquo; on your Terminal and deal with compiler problems. So, make sure that you already have those packages.</description>
     </item>
     
     <item>
       <title>Build Yolov3</title>
-      <link>http://example.com/post/installyolo/</link>
+      <link>https://erolozge.github.io/post/installyolo/</link>
       <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/post/installyolo/</guid>
+      <guid>https://erolozge.github.io/post/installyolo/</guid>
       <description>How To Build Yolov3-Tiny On MacOs
 What is Yolo?
 You only look once (YOLO) is a real-time object detection system. It is the fastest model for object detection.
@@ -49,19 +37,19 @@ In this post,I will guide you how to build Yolov3-tiny on macOS terminal :</desc
     
     <item>
       <title>Homebrew</title>
-      <link>http://example.com/post/homebrew/</link>
+      <link>https://erolozge.github.io/post/homebrew/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/post/homebrew/</guid>
+      <guid>https://erolozge.github.io/post/homebrew/</guid>
       <description>On this blog, I will give brief information about Homebrew and list some basic commands of Homebrew. What is Homebrew? Homebrew is a software package management system that simplifies the installation of software on Mac OS. What does a package manager do? Packages are installable bundles of source code. A package manager is a tool which automates the process of installing, updating, and removing packages. More Information about Homebrew ; Homebrew is written in the Ruby programming language and targets the version of Ruby that comes installed with the macOS operating system.</description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>http://example.com/post/my-first-post/</link>
+      <link>https://erolozge.github.io/post/my-first-post/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/post/my-first-post/</guid>
+      <guid>https://erolozge.github.io/post/my-first-post/</guid>
       <description>This is my first post.</description>
     </item>
     

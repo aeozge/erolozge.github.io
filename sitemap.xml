@@ -3,49 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.com/post/cifar-10-dataset/</loc>
-    <lastmod>2018-12-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.com/post/convertrgbtograyscale/</loc>
+    <loc>https://erolozge.github.io/post/convertrgbtograyscale/</loc>
     <lastmod>2018-12-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.com/post/installyolo/</loc>
+    <loc>https://erolozge.github.io/post/installyolo/</loc>
     <lastmod>2018-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.com/post/homebrew/</loc>
+    <loc>https://erolozge.github.io/post/homebrew/</loc>
     <lastmod>2018-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.com/post/my-first-post/</loc>
+    <loc>https://erolozge.github.io/post/my-first-post/</loc>
     <lastmod>2018-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.com/categories/</loc>
+    <loc>https://erolozge.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.com/</loc>
-    <lastmod>2018-12-13T00:00:00+00:00</lastmod>
+    <loc>https://erolozge.github.io/</loc>
+    <lastmod>2018-12-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.com/post/</loc>
-    <lastmod>2018-12-13T00:00:00+00:00</lastmod>
+    <loc>https://erolozge.github.io/post/</loc>
+    <lastmod>2018-12-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/</loc>
+    <loc>https://erolozge.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
