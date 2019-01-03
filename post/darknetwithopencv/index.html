@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Compiling Darknet with OpenCV on Mac OS</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: purple;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://erolozge.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.52" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Compiling Darknet with OpenCV on Mac OS</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:me@example.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/erolozge/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/eozge01/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/erolozge/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/darknetwithopencv/">Compiling Darknet with OpenCV on Mac OS</a></h4>
+    <h5>January 3, 2019</h5>
+    
+
+</div>
+
+
+    <br> <div class="text-justify"><p>Compiling Darknet with OpenCV on Mac OS</p>
+
+<p>In this post, I&rsquo;ll explain how to install OpenCV - darknet on Mac OS, and compile darknet with OpenCV.</p>
+
+<p>Before starting, you need to install Homebrew on your computer. If you already have installed it, you can jump to the other steps.
+   If you don&rsquo;t know what homebrew is and why you need to install it, contiune reading this post.
+  =&gt; Homebrew is a software package management system that simplifies the installation of software on Mac OS. A package manager is a tool which automates the process of installing, updating, and removing packages. With Homebrew package manager, you can use open source software that needs compiling, updating or configuring etc. manually.
+  =&gt; Homebrew installs the stuff you need that Apple didn’t.</p>
+
+<p>Installation Homebrew :</p>
+
+<p>Paste that in a Terminal prompt.</p>
+
+<pre><code>  $  /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre>
+
+<p>then run this one :</p>
+
+<pre><code>  $ brew update
+</code></pre>
+
+<p>it will show you installed homebrew succesfully.</p>
+
+<p>I&rsquo;d recommend to use virtual environment because Python virtual environments allow us to create isolated, independent environments for each of our Python projects. There are several virtual enviroments such as conda,virtualenv or anaconda. I&rsquo;ll use the virtualenv. The virtualenv and virtualenvwrapper packages allow us to create separate, independent Python virtual environments for each project we are working on.</p>
+
+<pre><code>  $ pip install virtualenv virtualenvwrapper
+
+  $ vim ~/.bash_profile
+</code></pre>
+
+<p>Append the following lines to the file:</p>
+
+<pre><code>  # Virtualenv/VirtualenvWrapper
+  source /usr/local/bin/virtualenvwrapper.sh
+</code></pre>
+
+<p>You need to refresh your shell by using the source command below:</p>
+
+<pre><code>  $ source ~/.bash_profile
+</code></pre>
+
+<p>Create your Python virtual environment</p>
+
+<p>You are now ready to use the &ldquo;mkvirtualenv&rdquo; command to create a Python virtual environment named cv which is for computer vision.</p>
+
+<p>For Python 2.7 use the following command:</p>
+
+<pre><code>  $ mkvirtualenv cv -p python
+</code></pre>
+
+<p>The mkvirtualenv  command only needs to be executed once. To access the cv Python virtual environment after you have already created it, just use the workon  command:</p>
+
+<pre><code>  $ workon cv
+</code></pre>
+
+<p>Install Opencv 2.4</p>
+
+<pre><code>  $ brew install opencv@2
+
+  echo 'export PATH=&quot;/usr/local/opt/opencv@2/bin:$PATH&quot;' 
+
+  $ vim ~/.bash_profile
+</code></pre>
+
+<p>then append the following lines to the file:</p>
+
+<pre><code>  # opencv2
+  export PATH=&quot;/usr/local/opt/opencv@2/bin:$PATH&quot;
+</code></pre>
+
+<p>continue to run those commands :</p>
+
+<pre><code>  export LDFLAGS=-L/usr/local/opt/opencv@2/lib
+
+  export CPPFLAGS=-I/usr/local/opt/opencv@2/include
+
+  export PKG_CONFIG_PATH=/usr/local/opt/opencv@2/lib/pkgconfig
+</code></pre>
+
+<p>Install NumPy</p>
+
+<p>The only Python prerequisite for OpenCV is NumPy, a scientific computing package.</p>
+
+<p>To install NumPy, first make sure you are in the cv virtual environment(workon cv) and then let pip handle the actual installation:</p>
+
+<pre><code> $ pip install numpy
+</code></pre>
+
+<p>Install Darknet</p>
+
+<pre><code> $ git clone https://github.com/pjreddie/darknet.git
+ $ cd darknet
+ $ make
+</code></pre>
+
+<p>after that you need to edit  Makefile for compiling it with OpenCV</p>
+
+<pre><code> $ cd darknet
+ $ vim Makefile
+</code></pre>
+
+<p>change</p>
+
+<pre><code> OpenCV = 1 
+</code></pre>
+
+<p>then run</p>
+
+<pre><code> $ make
+</code></pre>
+
+<p>=&gt; you may want to run that command to see if your installed darknet works with OpenCV or not:</p>
+
+<pre><code>$ ./darknet imtest data/eagle.jpg
+</code></pre>
+
+<p>REFERENCES :</p>
+
+<p><a href="https://pjreddie.com/darknet/install/">https://pjreddie.com/darknet/install/</a></p>
+
+<p><a href="https://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/">https://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/</a></p>
+
+<p><a href="https://brew.sh/">https://brew.sh/</a></p>
+</div>
+
+    
+    
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "username" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
